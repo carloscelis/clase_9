@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+html{
+	font-family: "helvetica"
+}
+
+.colum-1 {width: 8.3333333333%;}
+.colum-2 {width: 16.6666666666%;}
+.colum-3 {width: 24.9999999999%;}
+.colum-4 {width: 33.3333333332%;}
+.colum-5 {width: 41.6666666665%;}
+.colum-6 {width: 49.9999999998%;}
+.colum-7 {width: 58.3333333331%;}
+.colum-8 {width: 66.6666666664%;}
+.colum-9 {width: 74.9999999997%;}
+.colum-10 {width: 83.333333333%;}
+.colum-11 {width: 91.6666666663%;}
+.colum-12 {width: 100%;}
+
+[class*="colum-"] {
+	padding: 5px ;
+	float: left;
+}
+.row::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+body{
+	
+}
+
+.row main{
+	background-color: white;
+}
+
+header{
+	background-color: #B53583;
+	width: 100%;
+	color: #E8D55B;
+	height: 90px;
+	padding: 15px;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+nav ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+nav li{
+	list-style-type: none;
+	color: #B53583;
+	background: #E8D55B;
+	margin-bottom: 5px;
+	text-align: center;
+	display: block;
+	height: 33px;
+	padding-top: 6px;
+	transition: background-color 2s ease-out;
+	font-weight: 600; 
+}
+
+li:hover {
+	background-color: #74E4EC;
+	color: #B53583;
+	-webkit-transition: width 2s;
+}
+
+.foto_1{
+	/*background-color: red;*/
+	height: 200px;
+}
+
+#container-foto-2 {
+	height: 200px;
+	-webkit-transition: height 1s ease; 
+    transition: height 1s ease;
+}
+#container-foto-2:hover{
+	height: 400px;
+}
+
+
+#foto_2{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/gato.jpg);
+}
+.foto_3{
+	background-color: #74E4EC;
+	height: 200px;
+}
